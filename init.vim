@@ -42,12 +42,18 @@ set ttyfast
 set lazyredraw
 
 " interface and basic behavior
+set relativenumber
+set tabstop=4 softtabstop=4
+set expandtab
+set guicursor=
+set nohlsearch
+set noerrorbells
+set nu
+set nowrap
 set nocompatible
 set bs=2              " same as :set backspace=indent,eol,start
 set mousehide
-set nu
 set nuw=5
-set wrap
 set hidden            " change buffer without saving
 set ruler
 set scrolloff=8       " lines above/below cursor
@@ -60,6 +66,7 @@ set splitright        " split new window right of the current one
 set nojoinspaces      " use just one space to join strings
 set formatoptions+=j  " delete comment when joining commented lines
 set nostartofline     " do not move cursor back to start of line when moving
+set signcolumn=yes
 
 " if on mac, uses option-key as meta <M>; allow more key combos
 if exists('+macmeta')
