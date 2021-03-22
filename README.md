@@ -1,3 +1,5 @@
+## Credits to Luiz Rocha @lsdr
+
 ## Pre-requisites
 
 To use this, you'll need:
@@ -26,28 +28,11 @@ This will do the following:
 
 NeoVim is ready to roll just after the `make` is done.
 
-### Why the Symlink dance?
-
-NeoVim follows the _XDG Base Directory Specification_, meaning that
-configuration files will live in the `$XDG_CONFIG_HOME` which, in turn, is
-usually set to `$HOME/.config`.
-
-I don't like to keep code/settings repos spread across my `$HOME`, so I leave
-then in `~/Code` or something and symlink stuff where applications can find it.
-
-The only project I had that broke this convention was
-[my vim files](https://github.com/lsdr/vim), but starting fresh with NeoVim is
-a good opportunity to fix this.
-
 ## Configuration Files
 
 Configuration files live in the `conf.d` dir and have a two-digit trailing
 number to serve as both a visual cue when I'm in a terminal working on them and
 to make sure files are loaded following a logical order.
-
-Although the latter sounds more important, in the end I care more about the
-former. So far, there's no need for a ordered loading process to use this
-setup.
 
 ### Convention
 
@@ -58,7 +43,6 @@ Digits are used according to the following (very arbitrary) convention:
 * `60-89` _unused for now_
 * `90-99` plugins, trackers, tools, fun stuff; everything in this range can be
   removed and no one would notice
-
 
 ### Troubleshooting
 * Found an existing $(path to nvim) exiting
