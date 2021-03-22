@@ -62,7 +62,4 @@ Digits are used according to the following (very arbitrary) convention:
 >Disable them by `:PlugClean`
 >
 
-:mahjong:
-
-
 [plug]: https://github.com/junegunn/vim-plug
