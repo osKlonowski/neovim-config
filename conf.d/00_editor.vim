@@ -25,13 +25,7 @@ Plug 'wincent/ferret'
   let g:FerretHlsearch=1
 
 " Plug 'tpope/vim-surround'
-" Plug 'Townk/vim-autoclose'
-
-Plug 'preservim/nerdcommenter'
-   let NERDSpaceDelims=1
-   let NERDMenuMode=0
-   " always comment the whole line, no matter where the cursor is
-   let NERDCommentWholeLinesInVMode=1
+Plug 'Townk/vim-autoclose'
 
 Plug 'terryma/vim-multiple-cursors'
   " Default mapping
@@ -43,4 +37,19 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-projectionist'
 
-" vim: set ft=vim:
+Plug 'tpope/vim-fugitive'
+  " gr will merge from the right side
+  nmap <leader>gr :diffget //3<CR>
+  " gl will merge from the left side
+  nmap <leader>gl :diffget //2<CR>
+  " gs Git Status
+  nmap <leader>gs :G<CR>
+  nnoremap <leader>gc :Git commit<CR>
+  nnoremap <leader>gp :Git push<CR>
+
+Plug 'preservim/nerdcommenter'
+  let NERDSpaceDelims=1
+  let NERDMenuMode=0
+  " always comment the whole line, no matter where the cursor is
+  let NERDCommentWholeLinesInVMode=1
+      
