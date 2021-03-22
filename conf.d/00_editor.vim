@@ -9,7 +9,7 @@ Plug 'ctrlpvim/ctrlp.vim'
     \ 'file': '\v\~$|\.(o|swp|pyc|png|gif|jpg|jpeg|svg|eot|ttf|woff)$|(^|[/\\])\.(hg|git|azk|bundle)($|[/\\])'
     \ }
 
-  let g:ctrlp_map='<leader>t'
+let g:ctrlp_map='<leader>p'
   nnoremap <leader>b :CtrlPBuffer<cr>
   nnoremap <leader>m :CtrlPMRU<cr>
   nnoremap <leader>. :CtrlPTag<cr>

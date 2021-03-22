@@ -1,7 +1,7 @@
 "" first things first: mapping leader, textwidth and such
 "
 " setting <leader> to comma
-let mapleader=','
+let mapleader=' '
 
 " shift no longer required
 nnoremap ; :
@@ -29,6 +29,13 @@ filetype plugin indent on
 
 " enable syntax highlight
 syntax enable
+inoremap jk <Esc>
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+" for Dart Language Server Config
+let g:dart_style_guide = 2
+let g:dart_format_on_save = 1
 
 " improving redrawing smoothness
 set ttyfast
@@ -43,7 +50,7 @@ set nuw=5
 set wrap
 set hidden            " change buffer without saving
 set ruler
-set scrolloff=3       " lines above/below cursor
+set scrolloff=8       " lines above/below cursor
 set history=750
 set fileformats=unix,mac,dos
 set cursorline

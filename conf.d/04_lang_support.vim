@@ -1,6 +1,6 @@
 " language support
 " support for most commonly used proglang syntax and indentation
-
+Plug 'dart-lang/dart-vim-plugin'
 Plug 'sheerun/vim-polyglot'
   "" ruby support (vim-ruby)
   let g:ruby_indent_block_style='do'
