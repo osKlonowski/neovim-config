@@ -21,12 +21,8 @@ let g:ctrlp_map='<leader>p'
     let g:ctrlp_use_caching=0
   endif
 
-Plug 'wincent/ferret'
-  let g:FerretNvim=1
-  let g:FerretHlsearch=1
-
-" Plug 'tpope/vim-surround'
 Plug 'Townk/vim-autoclose'
+Plug 'tpope/vim-markdown'
 
 Plug 'terryma/vim-multiple-cursors'
   " Default mapping
