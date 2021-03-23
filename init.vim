@@ -30,8 +30,6 @@ filetype plugin indent on
 " enable syntax highlight
 syntax enable
 inoremap jk <Esc>
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
 
 " for Dart Language Server Config
 let g:dart_style_guide = 2
@@ -43,10 +41,8 @@ set lazyredraw
 
 " interface and basic behavior
 set relativenumber
-set tabstop=4 softtabstop=4
-set expandtab
+set tabstop=4
 set guicursor=
-set nohlsearch
 set noerrorbells
 set nu
 set nowrap
@@ -74,7 +70,7 @@ if exists('+macmeta')
 endif
 
 " tab/indentation configuration
-set softtabstop=2
+set softtabstop=4
 set shiftwidth=2
 set expandtab
 set smarttab
@@ -92,8 +88,8 @@ set ignorecase
 set smartcase
 set infercase
 set showmatch
-set hlsearch
 set incsearch
+set nohlsearch
 
 " backup and swap settings
 set nobackup
@@ -121,4 +117,3 @@ map <left>  <C-w>h
 let g:loaded_python_provider=1
 let g:loaded_node_provider=1
 
-" vim: set ft=vim:
