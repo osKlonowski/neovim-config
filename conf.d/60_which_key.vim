@@ -37,11 +37,24 @@ let g:which_key_map['w'] = {
       \ 'r' : 'merge-right',
       \ }
 
+  let g:which_key_map["/"] = {
+    \ 'name' : 'Toggle-Comment',
+    \ }
+
   let g:which_key_map.c = {
     \ 'name' : '+NERDCommenter',
     \ 'i' : 'toggle-comment',
     \ }
 
+  let g:which_key_map.s = {
+    \ 'name' : '+FZF',
+    \ 'b' : 'buffers',
+    \ 'f' : 'in-files',
+    \ 't' : 'tags',
+    \ 'm' : 'marks',
+    \ 's' : 'files',
+    \ }
+  
   let g:which_key_map.f = {
     \ 'name' : '+Ferret',
     \ 'a' : 'ferret-ack',

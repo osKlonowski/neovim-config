@@ -43,10 +43,4 @@ Plug 'tpope/vim-fugitive'
   nmap <leader>gs :G<CR>
   nnoremap <leader>gc :Git commit<CR>
   nnoremap <leader>gp :Git push<CR>
-
-Plug 'preservim/nerdcommenter'
-  let NERDSpaceDelims=1
-  let NERDMenuMode=0
-  " always comment the whole line, no matter where the cursor is
-  let NERDCommentWholeLinesInVMode=1
       
