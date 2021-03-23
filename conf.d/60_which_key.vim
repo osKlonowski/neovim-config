@@ -42,5 +42,13 @@ let g:which_key_map['w'] = {
     \ 'i' : 'toggle-comment',
     \ }
 
+  let g:which_key_map.f = {
+    \ 'name' : '+Ferret',
+    \ 'a' : 'ferret-ack',
+    \ 's' : 'ferret-ack-word',
+    \ 'l' : 'ferret-lack',
+    \ 'r' : 'ferret-acks',
+    \ }
+
 " Loads the which_key_map dictionary into WhichKey
 autocmd! User vim-which-key call which_key#register('<Space>', 'g:which_key_map')
