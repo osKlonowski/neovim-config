@@ -23,6 +23,7 @@ let g:ctrlp_map='<leader>p'
 
 Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-markdown'
+Plug 'pacha/vem-tabline'
 
 Plug 'terryma/vim-multiple-cursors'
   " Default mapping

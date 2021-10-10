@@ -1,10 +1,12 @@
 "" first things first: mapping leader, textwidth and such
 "
-" setting <leader> to comma
+" setting <leader> to space
 let mapleader=' '
 
 " shift no longer required
 nnoremap ; :
+
+tnoremap <Esc> <C-\><C-n>
 
 " set textwidth to 80 cols (oldschool here)
 set textwidth=80
@@ -30,6 +32,8 @@ filetype plugin indent on
 " enable syntax highlight
 syntax enable
 inoremap jk <Esc>
+" remove buffer
+nnoremap <leader>d :bd<CR>
 
 " for Dart Language Server Config
 let g:dart_style_guide = 2
