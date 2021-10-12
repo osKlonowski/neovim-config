@@ -9,19 +9,26 @@ nnoremap ; :
 tnoremap <Esc> <C-\><C-n>
 
 " set textwidth to 80 cols (oldschool here)
-set textwidth=80
+set textwidth=100
 
 " set encoding to UTF-8 no matter what
 set encoding=utf-8
+
 
 " bootstrapping vim-plug
 call plug#begin('~/.config/nvim/plugins')
 
 " load plugin definition and extra configuration
 runtime! conf.d/*.vim
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
+Plug 'dart-lang/dart-vim-plugin'
 
 " initialize plugin system
 call plug#end()
+
+luafile ~/Documents/dev_other/nvim/luas/00_native_lsp.lua
+luafile ~/Documents/dev_other/nvim/luas/01_compe.lua
 
 " load colorscheme
 runtime! colors.vim
@@ -34,6 +41,16 @@ syntax enable
 inoremap jk <Esc>
 " remove buffer
 nnoremap <leader>d :bd<CR>
+
+" Keeping it centered remappings
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+nnoremap <C-j> :cnext<CR>zzzv
+
+" Undo break points
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
 
 " for Dart Language Server Config
 let g:dart_style_guide = 2
@@ -120,4 +137,3 @@ map <left>  <C-w>h
 " disable neovim python2/nodejs providers
 let g:loaded_python_provider=1
 let g:loaded_node_provider=1
-
