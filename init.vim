@@ -9,7 +9,7 @@ nnoremap ; :
 tnoremap <Esc> <C-\><C-n>
 
 " set textwidth to 80 cols (oldschool here)
-set textwidth=100
+set textwidth=80
 
 " set encoding to UTF-8 no matter what
 set encoding=utf-8
