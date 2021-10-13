@@ -38,6 +38,8 @@ luafile ~/Documents/dev_other/nvim/luas/02_telescope.lua
 " load colorscheme
 runtime! colors.vim
 
+autocmd FileType TelescopePrompt call deoplete#custom#buffer_option('auto_complete', v:false)
+
 " enable plugin/indentation based on filetype detection
 filetype plugin indent on
 

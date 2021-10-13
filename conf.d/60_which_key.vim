@@ -43,24 +43,25 @@ let g:which_key_map['w'] = {
 
   let g:which_key_map.c = {
     \ 'name' : '+NERDCommenter',
-    \ 'i' : 'toggle-comment',
+    \ 'c' : 'toggle-comment',
+    \ 'u' : 'uncomment',
+    \'b':'align-both',
+    \'l':'align-left',
     \ }
 
   let g:which_key_map.s = {
-    \ 'name' : '+FZF',
-    \ 'b' : 'buffers',
-    \ 'f' : 'in-files',
-    \ 't' : 'tags',
-    \ 'm' : 'marks',
-    \ 's' : 'files',
-    \ }
-  
+        \ 'name': '+Telescope',
+        \ 'b': 'buffers',
+        \ 'g': 'live-grep',
+        \ 'f': 'find-files',
+        \}
+
   let g:which_key_map.f = {
     \ 'name' : '+Ferret',
-    \ 'a' : 'ferret-ack',
-    \ 's' : 'ferret-ack-word',
+    \ 'a' : 'type-word-search',
+    \ 's' : 'search-word',
     \ 'l' : 'ferret-lack',
-    \ 'r' : 'ferret-acks',
+    \ 'r' : 'ask-substitue-fr-qfl',
     \ }
 
 " Loads the which_key_map dictionary into WhichKey

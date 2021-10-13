@@ -23,3 +23,7 @@ vnoremap <leader>p "_dP
 " Better tabbing inside buffer, tabs from left side
 vnoremap < <gv
 vnoremap > >gv
+
+" paste something yanked not deleted "
+nmap ,p "0p
+nmap ,P "0P
