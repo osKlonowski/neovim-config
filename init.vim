@@ -23,12 +23,17 @@ runtime! conf.d/*.vim
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 " initialize plugin system
 call plug#end()
 
 luafile ~/Documents/dev_other/nvim/luas/00_native_lsp.lua
 luafile ~/Documents/dev_other/nvim/luas/01_compe.lua
+luafile ~/Documents/dev_other/nvim/luas/02_telescope.lua
 
 " load colorscheme
 runtime! colors.vim
