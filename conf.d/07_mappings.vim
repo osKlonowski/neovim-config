@@ -1,4 +1,5 @@
 " PERSONAL MAPPINGS
+nnoremap V v$
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
@@ -16,6 +17,6 @@ nnoremap <leader>j :m .+1<CR>==
 " Alternate way to save
 nnoremap <C-s> :w<CR>
 
-" Better tabbing inside buffer, spaces from left side
+" Better tabbing inside buffer, tabs from left side
 vnoremap < <gv
 vnoremap > >gv
