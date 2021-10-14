@@ -54,13 +54,17 @@ let g:which_key_map['w'] = {
         \ 'b': 'buffers',
         \ 'g': 'live-grep',
         \ 'f': 'find-files',
+        \ 'c': 'code-actions',
+        \ 's': 'word-grep',
+        \ 'e': 'file-browser',
+        \ 'i': 'buffer-find',
         \}
 
   let g:which_key_map.f = {
     \ 'name' : '+Ferret',
     \ 'a' : 'type-word-search',
     \ 's' : 'search-word',
-    \ 'l' : 'ferret-lack',
+    \ 'l' : 'loc-search',
     \ 'r' : 'ask-substitue-fr-qfl',
     \ }
 

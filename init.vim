@@ -3,9 +3,6 @@
 " setting <leader> to space
 let mapleader=' '
 
-" shift no longer required
-nnoremap ; :
-
 tnoremap <Esc> <C-\><C-n>
 
 " set textwidth to 80 cols (oldschool here)
@@ -23,6 +20,7 @@ runtime! conf.d/*.vim
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -45,19 +43,6 @@ filetype plugin indent on
 
 " enable syntax highlight
 syntax enable
-inoremap jk <Esc>
-" remove buffer
-nnoremap <leader>d :bd<CR>
-
-" Keeping it centered remappings
-nnoremap n nzzzv
-nnoremap N Nzzzv
-nnoremap J mzJ`z
-nnoremap <C-j> :cnext<CR>zzzv
-
-" Undo break points
-inoremap , ,<c-g>u
-inoremap . .<c-g>u
 
 " for Dart Language Server Config
 let g:dart_style_guide = 2
@@ -128,18 +113,6 @@ runtime! macros/matchit.vim
 
 " few useful shortcuts
 command! Rehash source ~/.config/nvim/init.vim
-
-" close current buffer
-nmap <leader>x :close<cr>
-
-" clear search highlights
-nmap <silent>,/ :nohls<cr>
-
-" make the arrow keys switch between splits
-map <up>    <C-w>k
-map <down>  <C-w>j
-map <right> <C-w>l
-map <left>  <C-w>h
 
 " disable neovim python2/nodejs providers
 let g:loaded_python_provider=1

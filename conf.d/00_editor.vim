@@ -1,25 +1,25 @@
 
 " editor.vim - basic stuff that improve editing all-around
 "
-Plug 'ctrlpvim/ctrlp.vim'
-  let g:ctrlp_match_window='bottom,order:btt,min:1,max:7,results:10'
-  let g:ctrlp_working_path_mode='ra'
-  let g:ctrlp_jump_to_buffer=2
-  let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/]\.(git|hg|svn|gitkeep|azk)$',
-    \ 'file': '\v\~$|\.(o|swp|pyc|png|gif|jpg|jpeg|svg|eot|ttf|woff)$|(^|[/\\])\.(hg|git|azk|bundle)($|[/\\])'
-    \ }
+" Plug 'ctrlpvim/ctrlp.vim'
+  " let g:ctrlp_match_window='bottom,order:btt,min:1,max:7,results:10'
+  " let g:ctrlp_working_path_mode='ra'
+  " let g:ctrlp_jump_to_buffer=2
+  " let g:ctrlp_custom_ignore = {
+    " \ 'dir':  '\v[\/]\.(git|hg|svn|gitkeep|azk)$',
+    " \ 'file': '\v\~$|\.(o|swp|pyc|png|gif|jpg|jpeg|svg|eot|ttf|woff)$|(^|[/\\])\.(hg|git|azk|bundle)($|[/\\])'
+    " \ }
 
-let g:ctrlp_map='<leader>p'
-  nnoremap <leader>b :CtrlPBuffer<cr>
-  nnoremap <leader>m :CtrlPMRU<cr>
-  nnoremap <leader>. :CtrlPTag<cr>
+" let g:ctrlp_map='<leader>p'
+  " nnoremap <leader>b :CtrlPBuffer<cr>
+  " nnoremap <leader>m :CtrlPMRU<cr>
+  " nnoremap <leader>. :CtrlPTag<cr>
 
-  " use ag in ctrlp: very fast, respects .gitignore and doesn't need cache
-  if executable('ag')
-    let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
-    let g:ctrlp_use_caching=0
-  endif
+  " " use ag in ctrlp: very fast, respects .gitignore and doesn't need cache
+  " if executable('ag')
+    " let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
+    " let g:ctrlp_use_caching=0
+  " endif
 
 Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-markdown'
@@ -44,4 +44,3 @@ Plug 'tpope/vim-fugitive'
   nmap <leader>gs :G<CR>
   nnoremap <leader>gc :Git commit<CR>
   nnoremap <leader>gp :Git push<CR>
-      
