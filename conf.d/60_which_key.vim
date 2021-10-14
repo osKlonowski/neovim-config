@@ -68,5 +68,15 @@ let g:which_key_map['w'] = {
     \ 'r' : 'ask-substitue-fr-qfl',
     \ }
 
+let g:which_key_map.t = {
+  \ 'name': '+Floaterm',
+  \ 'o': 'open',
+  \ 't': 'toggle',
+  \ 'n': 'next-instance',
+  \ 'p': 'prev-instance',
+  \ 'h': 'hide',
+  \ 'k': 'kill',
+  \}
+
 " Loads the which_key_map dictionary into WhichKey
 autocmd! User vim-which-key call which_key#register('<Space>', 'g:which_key_map')
