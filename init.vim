@@ -17,6 +17,7 @@ call plug#begin('~/.config/nvim/plugins')
 
 " load plugin definition and extra configuration
 runtime! conf.d/*.vim
+Plug 'ryanoasis/vim-devicons'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'dart-lang/dart-vim-plugin'
