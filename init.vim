@@ -19,7 +19,14 @@ call plug#begin('~/.config/nvim/plugins')
 runtime! conf.d/*.vim
 Plug 'ryanoasis/vim-devicons'
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-compe'
+" Plug 'hrsh7th/nvim-compe'
+" Auto Completion "
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/popup.nvim'
@@ -32,13 +39,13 @@ Plug 'ap/vim-css-color'
 call plug#end()
 
 luafile ~/Documents/dev_other/nvim/luas/00_native_lsp.lua
-luafile ~/Documents/dev_other/nvim/luas/01_compe.lua
+luafile ~/Documents/dev_other/nvim/luas/01_cmp.lua
 luafile ~/Documents/dev_other/nvim/luas/02_telescope.lua
 
 " load colorscheme
 runtime! colors.vim
 
-autocmd FileType TelescopePrompt call deoplete#custom#buffer_option('auto_complete', v:false)
+" autocmd FileType TelescopePrompt call deoplete#custom#buffer_option('auto_complete', v:false)
 
 " enable plugin/indentation based on filetype detection
 filetype plugin indent on
