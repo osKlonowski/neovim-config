@@ -19,6 +19,9 @@ inoremap jk <Esc>
 " remove buffer
 nnoremap <leader>d :bd<CR>
 
+nmap ]a :ALENextWrap<CR>
+nmap [a :ALEPreviousWrap<CR>
+
 " Keeping it centered remappings
 nnoremap n nzzzv
 nnoremap N Nzzzv

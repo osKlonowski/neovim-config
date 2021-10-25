@@ -68,6 +68,12 @@ let g:which_key_map['w'] = {
     \ 'r' : 'ask-substitue-fr-qfl',
     \ }
 
+  let g:which_key_map.e = {
+    \ 'name' : '+AleLint',
+    \ 'n' : 'next-error',
+    \ 'p' : 'prev-error',
+    \ }
+
 let g:which_key_map.t = {
   \ 'name': '+Floaterm',
   \ 'o': 'open',

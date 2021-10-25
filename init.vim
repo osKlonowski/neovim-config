@@ -19,7 +19,6 @@ call plug#begin('~/.config/nvim/plugins')
 runtime! conf.d/*.vim
 Plug 'ryanoasis/vim-devicons'
 Plug 'neovim/nvim-lspconfig'
-" Plug 'hrsh7th/nvim-compe'
 " Auto Completion "
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
