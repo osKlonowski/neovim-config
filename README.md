@@ -5,11 +5,11 @@ This is my personal Neovim -nightly configuration. It began from the base config
 Rocha and has since grown with the addition of multiple plugins, lua files, mappings, and more. Feel
 free to fork this repo or use it for your own config.
 
-## Installing files
+## Installation
 
 To setup the files for [NeoVim](https://neovim.io/):
 ```sh
-    $ git clone git@github.com:lsdr/nvim.git nvim
+    $ git clone https://github.com/osKlonowski/neovim-config.git nvim
     $ make install
 ```
 
