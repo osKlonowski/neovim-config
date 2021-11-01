@@ -3,7 +3,7 @@ nnoremap <leader>p :lua require('telescope.builtin').git_files()<CR>
 nnoremap <leader>sf :lua require('telescope.builtin').find_files()<CR>
 nnoremap <leader>sg :lua require('telescope.builtin').live_grep()<CR>
 nnoremap <leader>sb :lua require('telescope.builtin').buffers()<CR>
-nnoremap <leader>vh :lua require('telescope.builtin').help_tags()<CR>
+" nnoremap <leader>vh :lua require('telescope.builtin').help_tags()<CR>
 
 nnoremap <leader>sc :lua require('telescope.builtin').lsp_code_actions()<CR>
 nnoremap <leader>ss :lua require('telescope.builtin').grep_string()<CR>
