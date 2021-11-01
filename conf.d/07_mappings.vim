@@ -21,6 +21,7 @@ nnoremap <leader>d :bd<CR>
 
 nmap ]a :ALENextWrap<CR>
 nmap [a :ALEPreviousWrap<CR>
+nnoremap <silent> <space>re :ALERename<CR>
 
 " Keeping it centered remappings
 nnoremap n nzzzv

@@ -25,6 +25,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'windwp/nvim-autopairs'
 
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

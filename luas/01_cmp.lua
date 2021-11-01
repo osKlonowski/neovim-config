@@ -4,6 +4,15 @@ vim.o.completeopt = 'menuone,noselect,menu'
 -- Setup nvim-cmp.
   local cmp = require'cmp'
 
+require("nvim-autopairs").setup({
+	check_ts = true,
+	map_c_w = true,
+})
+
+-- If you want insert `(` after select function or method item
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+cmp.event:on( 'confirm_done', cmp_autopairs.on_confirm_done({  map_char = { tex = '' } }))
+
   cmp.setup({
     snippet = {
       expand = function(args)
@@ -16,6 +25,7 @@ vim.o.completeopt = 'menuone,noselect,menu'
       ['<C-f>'] = cmp.mapping.scroll_docs(4),
       ['<C-Space>'] = cmp.mapping.complete(),
       ['<C-e>'] = cmp.mapping.close(),
+      -- ['<CR>'] = cmp_autopairs.on_confirm_done({  map_char = { tex = '' } }),
       ['<CR>'] = cmp.mapping.confirm({
         behavior = cmp.ConfirmBehavior.Replace,
       }),
