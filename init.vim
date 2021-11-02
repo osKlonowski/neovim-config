@@ -34,7 +34,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'ap/vim-css-color'
-" Plug 'ThePrimeagen/harpoon'
+Plug 'ThePrimeagen/harpoon'
 
 " initialize plugin system
 call plug#end()
