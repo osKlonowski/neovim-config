@@ -35,6 +35,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'ap/vim-css-color'
 Plug 'ThePrimeagen/harpoon'
+Plug 'mattn/emmet-vim'
 
 " initialize plugin system
 call plug#end()
@@ -42,6 +43,7 @@ call plug#end()
 luafile ~/Documents/dev_other/nvim/luas/00_native_lsp.lua
 luafile ~/Documents/dev_other/nvim/luas/01_cmp.lua
 luafile ~/Documents/dev_other/nvim/luas/02_telescope.lua
+luafile ~/Documents/dev_other/nvim/luas/04_commenter.lua
 " luafile ~/Documents/dev_other/nvim/luas/03_harpoon.lua
 
 " load colorscheme
@@ -64,6 +66,7 @@ set ttyfast
 set lazyredraw
 
 " interface and basic behavior
+set noincsearch
 set relativenumber
 set tabstop=4
 set guicursor=
