@@ -37,17 +37,7 @@ let g:which_key_map['w'] = {
       \ 'r' : 'merge-right',
       \ }
 
-  let g:which_key_map["/"] = {
-    \ 'name' : 'Toggle-Comment',
-    \ }
-
-  let g:which_key_map.c = {
-    \ 'name' : '+NERDCommenter',
-    \ 'c' : 'toggle-comment',
-    \ 'u' : 'uncomment',
-    \'b':'align-both',
-    \'l':'align-left',
-    \ }
+  " letter c has be freed up
 
   let g:which_key_map.s = {
         \ 'name': '+Telescope',
